@@ -36,7 +36,7 @@
 			</tr>
 			<tr>
 				<td class="title">添加\<file\>至提交</td>
-				<td class="op">git add -p <file></td>
+				<td class="op">git add -p &ltfile&gt</td>
 			</tr>
 			<tr>
 				<td class="title">提交所有本地更改(包括未add的更改)</td>
@@ -61,11 +61,11 @@
 			</tr>
 			<tr>
 				<td class="title">显示特定文件随时间的变化</td>
-				<td class="op">git log -p <file></td>
+				<td class="op">git log -p &ltfile&gt</td>
 			</tr>
 			<tr>
 				<td class="title">是谁更改了内容和更改时间</td>
-				<td class="op">git blame <file></td>
+				<td class="op">git blame &ltfile&gt</td>
 			</tr>
 		</table>
 		
@@ -77,23 +77,23 @@
 			</tr>
 			<tr>
 				<td class="title">切换分支</td>
-				<td class="op">git checkout <branch></td>
+				<td class="op">git checkout &ltbranch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">基于当前头部创建新分支</td>
-				<td class="op">git branch <new branch></td>
+				<td class="op">git branch &ltnew branch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">基于远程分支创建新的跟踪分支</td>
-				<td class="op">git checkout --track <remote/branch></td>
+				<td class="op">git checkout --track &ltremote/branch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">删除本地分支</td>
-				<td class="op">git branch -d <branch></td>
+				<td class="op">git branch -d &ltbranch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">提交标签</td>
-				<td class="op">git tag <tag name></td>
+				<td class="op">git tag &lttag name&gt</td>
 			</tr>
 		</table>
 	</div>
@@ -107,27 +107,27 @@
 			</tr>
 			<tr>
 				<td class="title">显示有关远程</td>
-				<td class="op">git remote show <remote></td>
+				<td class="op">git remote show &ltremote&gt</td>
 			</tr>
 			<tr>
-				<td class="title">添加名为<remote>的新远程仓库</td>
-				<td class="op">git remote add <name> <url></td>
+				<td class="title">添加名为&ltremote&gt的新远程仓库</td>
+				<td class="op">git remote add &ltname&gt &lturl&gt</td>
 			</tr>
 			<tr>
-				<td class="title">从<remote>		下载所有更改，但不要应用于当前head中</td>
-				<td class="op">git fetch <remote></td>
+				<td class="title">从&ltremote&gt	下载所有更改，但不要应用于当前head中</td>
+				<td class="op">git fetch &ltremote&gt</td>
 			</tr>
 			<tr>
 				<td class="title">下载并合并到head头中</td>
-				<td class="op">git pull <remote> <branch></td>
+				<td class="op">git pull &ltremote&gt &ltbranch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">在远程上发表</td>
-				<td class="op">git push <remote> <branch></td>
+				<td class="op">git push &ltremote&gt &ltbranch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">删除远程分支</td>
-				<td class="op">git branch -dr <remote/branch></td>
+				<td class="op">git branch -dr &ltremote/branch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">发布标签</td>
@@ -139,11 +139,11 @@
 			<tr class="sector"><td>合并</td></tr>
 			<tr>
 				<td class="title">分支合并到head</td>
-				<td class="op">git merge <branch></td>
+				<td class="op">git merge &ltbranch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">将head重新定位到分支</td>
-				<td class="op">git rebase <branch></td>
+				<td class="op">git rebase &ltbranch&gt</td>
 			</tr>
 			<tr>
 				<td class="title">中止定位</td>
@@ -167,12 +167,12 @@
 			</tr>
 			<tr>
 				<td class="title">放弃特定文件中的本地更改</td>
-				<td class="op">git checkout HEAD <file></td>
+				<td class="op">git checkout HEAD &ltfile&gt</td>
 			</tr>
 			<tr>
 				<td class="title">将头指针重置为上一次提交 
 		,并放弃自那以后的所有变化</td>
-				<td class="op">git reset --hard <commit></td>
+				<td class="op">git reset --hard &ltcommit&gt</td>
 			</tr>
 			<tr>
 				<td class="title">继续定位</td>
@@ -188,7 +188,7 @@
 			<tr class="sector"><td>帮助文档</td></tr>
 			<tr>
 				<td class="title">帮助文档</td>
-				<td class="op">git help <command></td>
+				<td class="op">git help &ltcommand&gt</td>
 			</tr>
 		</table>
 	</div>

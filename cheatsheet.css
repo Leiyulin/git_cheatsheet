@@ -30,20 +30,24 @@ table {
 
 div.center_left {
 	float: left;
-	width:400px;
+	width:500px;
 	margin: 5px 5px 5px 5px;
 }
 
 div.center_right {
 	float: right;
-	width:400px;
+	width:500px;
 	margin: 5px 5px 5px 5px;
 }
 .main,h1{
-	width: 820px;
+	width: 1020px;
 	margin: 0 auto;
 }
 h1 {
 	text-align: center;
 	font-size:30px;
+}
+
+table{
+	margin-bottom: 5px;
 }
