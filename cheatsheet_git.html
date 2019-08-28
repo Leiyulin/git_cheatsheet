@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>cheatsheet for git</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cheatsheet.css">
+</head>
+<body>
+<h1>GIT CHEAT SHEET</h1>
+<div class="main">
+	<div class="center_left">
+		<table class="left">
+			<tr class="sector"><td>创建</td></tr>
+			<tr>
+				<td class="title">克隆</td>
+				<td class="op">git clone [ref_address]</td>
+			</tr>
+			<tr>
+				<td class="title">创建本地仓库</td>
+				<td class="op">git init</td>
+			</tr>
+		</table>
+		<table class="left">
+			<tr class="sector"><td>本地变化</td></tr>
+			<tr>
+				<td class="title">更改工作目录中的文件</td>
+				<td class="op">git status</td>
+			</tr>
+			<tr>
+				<td class="title">跟踪文件更改</td>
+				<td class="op">git diff</td>
+			</tr>
+			<tr>
+				<td class="title">添加all至提交</td>
+				<td class="op">git add .</td>
+			</tr>
+			<tr>
+				<td class="title">添加\<file\>至提交</td>
+				<td class="op">git add -p <file></td>
+			</tr>
+			<tr>
+				<td class="title">提交所有本地更改(包括未add的更改)</td>
+				<td class="op">git commit -a</td>
+			</tr>
+			<tr>
+				<td class="title">提交add后的更改</td>
+				<td class="op">git commit</td>
+			</tr>
+			<tr>
+				<td class="title">提交所有本地更改(包括未add的更改)</td>
+				<td class="op">git commit -a</td>
+			</tr>
+			<tr>
+		</table>
+		
+		<table class="left">
+			<tr  class="sector"><td>提交历史</td></tr>
+			<tr>
+				<td class="title">显示所有提交</td>
+				<td class="op">git log</td>
+			</tr>
+			<tr>
+				<td class="title">显示特定文件随时间的变化</td>
+				<td class="op">git log -p <file></td>
+			</tr>
+			<tr>
+				<td class="title">是谁更改了内容和更改时间</td>
+				<td class="op">git blame <file></td>
+			</tr>
+		</table>
+		
+		<table class="left">
+			<tr class="sector"><td>分支和标签</td></tr>
+			<tr>
+				<td class="title">列出所有分支</td>
+				<td class="op">git branch -av</td>
+			</tr>
+			<tr>
+				<td class="title">切换分支</td>
+				<td class="op">git checkout <branch></td>
+			</tr>
+			<tr>
+				<td class="title">基于当前头部创建新分支</td>
+				<td class="op">git branch <new branch></td>
+			</tr>
+			<tr>
+				<td class="title">基于远程分支创建新的跟踪分支</td>
+				<td class="op">git checkout --track <remote/branch></td>
+			</tr>
+			<tr>
+				<td class="title">删除本地分支</td>
+				<td class="op">git branch -d <branch></td>
+			</tr>
+			<tr>
+				<td class="title">提交标签</td>
+				<td class="op">git tag <tag name></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="center_right">
+		<table class="right">
+			<tr class="sector"><td>更新和发布</td></tr>
+			<tr>
+				<td class="title">列出所有配置远程</td>
+				<td class="op">git remote -v</td>
+			</tr>
+			<tr>
+				<td class="title">显示有关远程</td>
+				<td class="op">git remote show <remote></td>
+			</tr>
+			<tr>
+				<td class="title">添加名为<remote>的新远程仓库</td>
+				<td class="op">git remote add <name> <url></td>
+			</tr>
+			<tr>
+				<td class="title">从<remote>		下载所有更改，但不要应用于当前head中</td>
+				<td class="op">git fetch <remote></td>
+			</tr>
+			<tr>
+				<td class="title">下载并合并到head头中</td>
+				<td class="op">git pull <remote> <branch></td>
+			</tr>
+			<tr>
+				<td class="title">在远程上发表</td>
+				<td class="op">git push <remote> <branch></td>
+			</tr>
+			<tr>
+				<td class="title">删除远程分支</td>
+				<td class="op">git branch -dr <remote/branch></td>
+			</tr>
+			<tr>
+				<td class="title">发布标签</td>
+				<td class="op">git push --tags</td>
+			</tr>
+		</table>
+		
+		<table class="right">
+			<tr class="sector"><td>合并</td></tr>
+			<tr>
+				<td class="title">分支合并到head</td>
+				<td class="op">git merge <branch></td>
+			</tr>
+			<tr>
+				<td class="title">将head重新定位到分支</td>
+				<td class="op">git rebase <branch></td>
+			</tr>
+			<tr>
+				<td class="title">中止定位</td>
+				<td class="op">git rebase --abort</td>
+			</tr>
+			<tr>
+				<td class="title">继续定位</td>
+				<td class="op">git rebase --continue</td>
+			</tr>
+			<tr>
+				<td class="title">使用配置的合并工具解决冲突</td>
+				<td class="op">git mergetool</td>
+			</tr>
+		</table>
+		
+		<table class="right">
+			<tr class="sector"><td>撤销</td></tr>
+			<tr>
+				<td class="title">放弃工作目录中的所有本地更改</td>
+				<td class="op">git reset --hard HEAD</td>
+			</tr>
+			<tr>
+				<td class="title">放弃特定文件中的本地更改</td>
+				<td class="op">git checkout HEAD <file></td>
+			</tr>
+			<tr>
+				<td class="title">将头指针重置为上一次提交 
+		,并放弃自那以后的所有变化</td>
+				<td class="op">git reset --hard <commit></td>
+			</tr>
+			<tr>
+				<td class="title">继续定位</td>
+				<td class="op">git rebase --continue</td>
+			</tr>
+			<tr>
+				<td class="title">使用配置的合并工具解决冲突</td>
+				<td class="op">git mergetool</td>
+			</tr>
+		</table>
+		
+		<table class="right">
+			<tr class="sector"><td>帮助文档</td></tr>
+			<tr>
+				<td class="title">帮助文档</td>
+				<td class="op">git help <command></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+</body>
+</html>
